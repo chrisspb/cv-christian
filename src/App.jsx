@@ -42,35 +42,17 @@ const SKILLS = [
   {
     title: "Front-End",
     icon: "⚡",
-    items: [
-      { name: "JavaScript", level: 95 },
-      { name: "Vue.js", level: 95 },
-      { name: "React.js", level: 80 },
-      { name: "HTML5 / CSS3", level: 95 },
-      { name: "SCSS", level: 90 }
-    ]
+    items: ["JavaScript", "Vue.js", "React.js", "HTML5 / CSS3", "SCSS", "Micro Frontend"]
   },
   {
-    title: "Back-End",
+    title: "Back-End & Data",
     icon: "🛠",
-    items: [
-      { name: "Node.js", level: 75 },
-      { name: "PHP / Symfony", level: 70 },
-      { name: "Supabase", level: 80 },
-      { name: "MySQL", level: 70 },
-      { name: "Firebase", level: 65 }
-    ]
+    items: ["Node.js", "PHP / Symfony", "Supabase", "MySQL", "Firebase"]
   },
   {
     title: "IA & Outils",
     icon: "🤖",
-    items: [
-      { name: "Cursor / Vibe Coding", level: 90 },
-      { name: "Git / GitLab", level: 90 },
-      { name: "Vite / Webpack", level: 80 },
-      { name: "PHPStorm / VSCode", level: 90 },
-      { name: "Agile / Scrum", level: 80 }
-    ]
+    items: ["Cursor / Vibe Coding", "Git / GitLab", "Vite / Webpack", "PHPStorm / VSCode", "Agile / Scrum"]
   }
 ]
 
@@ -229,17 +211,11 @@ export default function App() {
             {SKILLS.map((group) => (
               <div className="skill-group" key={group.title}>
                 <div className="skill-group-title">{group.icon} {group.title}</div>
-                {group.items.map(skill => (
-                  <div className="skill-item" key={skill.name}>
-                    <div className="skill-info">
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-pct">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar-wrap">
-                      <div className="skill-bar" style={{width: `${skill.level}%`}} />
-                    </div>
-                  </div>
-                ))}
+                <div className="skill-tags">
+                  {group.items.map(item => (
+                    <span className="skill-tag" key={item}>{item}</span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
