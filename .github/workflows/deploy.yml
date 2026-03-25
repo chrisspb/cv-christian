@@ -24,13 +24,22 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install dependencies
         run: npm install
 
+      - name: Debug versions
+        run: |
+          echo "Node: $(node -v)"
+          echo "npm: $(npm -v)"
+          ls node_modules/.bin/vite || echo 'vite binary not found'
+
       - name: Build
-        run: npm run build
+        run: npx vite build
+
+      - name: List dist
+        run: ls -la dist/ dist/assets/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
