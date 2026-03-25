@@ -5,7 +5,7 @@ const EXPERIENCES = [
     company: "PREVENTEO",
     role: "Lead Front-End Developer",
     period: "2020 → Present",
-    desc: "À l'initiative d'une architecture micro front-end pour distribuer des librairies et composants partagés dans plusieurs applicatifs. Pilotage de la modernisation d'une plateforme SaaS QHSE : migration jQuery legacy vers Vue 3 avec une architecture modulaire et maintenable. Référent technique front-end de l'équipe.",
+    desc: "À l'initiative d'une architecture micro front-end pour distribuer des librairies et composants partagés dans plusieurs applicatifs. Pilotage de la modernisation d'une plateforme SaaS QHSE : migration jQuery legacy vers Vue 3 avec une architecture modulaire et maintenable. Référent technique front-end de l'équipe.",
     tags: ["Vue 3", "Micro Frontend", "JavaScript", "jQuery", "PHP", "Symfony", "SCSS", "GitLab"]
   },
   {
@@ -17,10 +17,10 @@ const EXPERIENCES = [
   },
   {
     company: "Université de Nice Sophia-Antipolis",
-    role: "Chargé de Cours",
-    period: "2019 → 2021",
-    desc: "Enseigné pendant 2 ans en Master MIAGE et Licence Informatique. Modules : Conception orientée objet avancée, Programmation client web riche, Développement web, Développement mobile hybride.",
-    tags: ["JavaScript", "Vue.js", "Node.js", "Sequelize", "HTML5", "CSS3", "Pédagogie"]
+    role: "Chargé d'enseignement vacataire",
+    period: "2021 → 2023",
+    desc: "Deux années d'enseignement en Licence et BUT Informatique. Modules : Programmation Web Client Riche, Développement web, Complément web. Intervention à l'IUT de Nice Sophia-Antipolis.",
+    tags: ["JavaScript", "Vue.js", "HTML5", "CSS3", "Pédagogie"]
   },
   {
     company: "Freelance — Projet Aperooo",
@@ -33,7 +33,7 @@ const EXPERIENCES = [
     company: "Sopra Steria · Orange",
     role: "Développeur Front-End",
     period: "2017 → 2018",
-    desc: "Développement de portails web pour Orange dans le cadre de projets stratégiques (MAGIC, STAR, SPAAD) : portail de gestion de recommandations et animation de TV office.",
+    desc: "Développement de portails web pour Orange dans le cadre de projets stratégiques (MAGIC, STAR, SPAAD) : portail de gestion de recommandations et animation de TV office.",
     tags: ["JavaScript", "jQuery", "PHP", "Zend2", "MySQL", "HTML5", "CSS3"]
   }
 ]
@@ -145,7 +145,7 @@ export default function App() {
 
         <section id="about">
           <div className="section-label">À propos</div>
-          <h2 className="section-title">Qui suis-je ?</h2>
+          <h2 className="section-title">Qui suis-je ?</h2>
           <p className="about-text">
             Développeur front-end depuis plus de 8 ans, j'ai évolué d'intégrateur web à Lead Developer,
             pilotant des migrations techniques complexes et des choix d'architecture au sein d'équipes produit.
@@ -156,7 +156,7 @@ export default function App() {
             <div className="about-card">
               <div className="about-card-icon">🏗</div>
               <h3>Architecture & Modernisation</h3>
-              <p>Micro front-end, migration de systèmes legacy vers Vue 3, définition des standards de code et montée en compétence d'équipe.</p>
+              <p>Micro front-end, migration de systèmes legacy vers Vue 3, définition des standards de code et montée en compétence d'équipe.</p>
             </div>
             <div className="about-card">
               <div className="about-card-icon">🤖</div>
@@ -171,7 +171,7 @@ export default function App() {
             <div className="about-card">
               <div className="about-card-icon">⚡</div>
               <h3>Performance & Qualité</h3>
-              <p>Sensible à l'expérience développeur et utilisateur : code lisible, maintenable, testé, et performant dès la conception.</p>
+              <p>Sensible à l'expérience développeur et utilisateur : code lisible, maintenable, testé, et performant dès la conception.</p>
             </div>
           </div>
         </section>
