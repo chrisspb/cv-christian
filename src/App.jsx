@@ -5,8 +5,8 @@ const EXPERIENCES = [
     company: "PREVENTEO",
     role: "Lead Front-End Developer",
     period: "2020 → Present",
-    desc: "Pilotage de la modernisation front-end d'une plateforme SaaS QHSE. Migration progressive d'une base de code legacy jQuery vers Vue 3 avec une architecture modulaire et maintenable. Référent technique front-end pour l'équipe.",
-    tags: ["Vue 3", "JavaScript", "jQuery", "PHP", "Symfony", "MySQL", "SCSS", "GitLab", "Xcode"]
+    desc: "À l'initiative d'une architecture micro front-end pour distribuer des librairies et composants partagés dans plusieurs applicatifs. Pilotage de la modernisation d'une plateforme SaaS QHSE : migration jQuery legacy vers Vue 3 avec une architecture modulaire et maintenable. Référent technique front-end de l'équipe.",
+    tags: ["Vue 3", "Micro Frontend", "JavaScript", "jQuery", "PHP", "Symfony", "SCSS", "GitLab"]
   },
   {
     company: "PREVENTEO",
@@ -95,6 +95,12 @@ const LANGUAGES = [
   { flag: "🇪🇸", name: "Espagnol", level: "Notions (A2)" }
 ]
 
+const STATS = [
+  { num: "10+", label: "ans d'expérience" },
+  { num: "5+", label: "projets en autonomie" },
+  { num: "1", label: "multinationale convaincue" }
+]
+
 export default function App() {
   return (
     <>
@@ -109,19 +115,28 @@ export default function App() {
       </nav>
 
       <main>
-        <section className="hero" id="hero" style={{maxWidth:'100%'}}>
-          <div className="hero-bg" />
+        <section className="hero" id="hero">
+          <div className="hero-blob hero-blob-1" />
+          <div className="hero-blob hero-blob-2" />
           <div className="hero-content">
             <div className="hero-badge">
-              <span />
+              <span className="badge-dot" />
               Disponible pour missions / collaboration
             </div>
-            <h1>Christian<br /><span>Pagh-Birk.</span></h1>
+            <h1>Christian<br /><span className="gradient-text">Pagh-Birk.</span></h1>
             <p className="hero-subtitle">Lead Front-End Developer</p>
             <p className="hero-desc">
               10+ ans d'expérience en développement web et mobile hybride, spécialisé JavaScript.
-              Passionné par la modernisation d'architectures legacy, la qualité de code, et l'utilisation de l'IA pour créer des produits concrets à fort impact.
+              Passionné par la modernisation d'architectures, l'IA, et la création de produits à fort impact.
             </p>
+            <div className="hero-stats">
+              {STATS.map(s => (
+                <div className="stat-item" key={s.label}>
+                  <span className="stat-num">{s.num}</span>
+                  <span className="stat-label">{s.label}</span>
+                </div>
+              ))}
+            </div>
             <div className="hero-meta">
               <span>📍 La Colle-sur-Loup, France</span>
               <span>💼 PREVENTEO · Lead Developer</span>
@@ -152,23 +167,27 @@ export default function App() {
             Développeur front-end depuis plus de 10 ans, j'ai évolué d'intégrateur web à Lead Developer,
             pilotant des migrations techniques complexes et des choix d'architecture au sein d'équipes produit.
             Convaincu que l'IA redéfinit notre façon de créer, j'ai vibe-codé en 1 mois une solution de lean management
-            adoptée par une multinationale sur plusieurs sites dans le monde — une démonstration concrète de ce qu'un développeur peut accomplir avec les bons outils.
+            adoptée par une multinationale — une démonstration concrète de ce qu'un développeur peut accomplir avec les bons outils.
           </p>
           <div className="about-grid">
             <div className="about-card">
-              <h3>🏗 Architecture & Modernisation</h3>
-              <p>Migration de systèmes legacy vers des architectures modernes Vue 3. Définition des standards de code, revues, et montée en compétence d'équipe.</p>
+              <div className="about-card-icon">🏗</div>
+              <h3>Architecture & Modernisation</h3>
+              <p>Micro front-end, migration de systèmes legacy vers Vue 3, définition des standards de code et montée en compétence d'équipe.</p>
             </div>
             <div className="about-card">
-              <h3>🤖 IA & Vibe Coding</h3>
-              <p>Utilisation avancée de l'IA (Cursor, LLMs) pour concevoir et livrer des produits complets à vitesse inédite. Solution lean management mondiale développée en 1 mois.</p>
+              <div className="about-card-icon">🤖</div>
+              <h3>IA & Vibe Coding</h3>
+              <p>Utilisation avancée de l'IA (Cursor, LLMs) pour concevoir et livrer des produits complets à vitesse inédite. Solution mondiale développée en 1 mois.</p>
             </div>
             <div className="about-card">
-              <h3>📱 Développement Mobile Hybride</h3>
-              <p>Conception et développement d'apps mobiles hybrides de bout en bout — de l'idée au déploiement, en autonomie totale.</p>
+              <div className="about-card-icon">📱</div>
+              <h3>Développement Mobile Hybride</h3>
+              <p>Conception et développement d'apps mobiles de bout en bout — de l'idée au déploiement, en autonomie totale.</p>
             </div>
             <div className="about-card">
-              <h3>⚡ Performance & Qualité</h3>
+              <div className="about-card-icon">⚡</div>
+              <h3>Performance & Qualité</h3>
               <p>Sensible à l'expérience développeur et utilisateur : code lisible, maintenable, testé, et performant dès la conception.</p>
             </div>
           </div>
@@ -182,16 +201,19 @@ export default function App() {
           <div className="timeline">
             {EXPERIENCES.map((exp, i) => (
               <div className="timeline-item" key={i}>
-                <div>
+                <div className="timeline-left">
+                  <div className="timeline-dot" />
+                </div>
+                <div className="timeline-body">
                   <p className="timeline-company">{exp.company}</p>
                   <div className="timeline-header">
                     <p className="timeline-role">{exp.role}</p>
                     <span className="timeline-period">{exp.period}</span>
                   </div>
-                </div>
-                <p className="timeline-desc">{exp.desc}</p>
-                <div className="tags">
-                  {exp.tags.map(t => <span className="tag" key={t}>{t}</span>)}
+                  <p className="timeline-desc">{exp.desc}</p>
+                  <div className="tags">
+                    {exp.tags.map(t => <span className="tag" key={t}>{t}</span>)}
+                  </div>
                 </div>
               </div>
             ))}
@@ -209,7 +231,10 @@ export default function App() {
                 <div className="skill-group-title">{group.icon} {group.title}</div>
                 {group.items.map(skill => (
                   <div className="skill-item" key={skill.name}>
-                    <span className="skill-name">{skill.name}</span>
+                    <div className="skill-info">
+                      <span className="skill-name">{skill.name}</span>
+                      <span className="skill-pct">{skill.level}%</span>
+                    </div>
                     <div className="skill-bar-wrap">
                       <div className="skill-bar" style={{width: `${skill.level}%`}} />
                     </div>
@@ -230,7 +255,7 @@ export default function App() {
               <div className="edu-card" key={edu.degree}>
                 <p className="edu-school">{edu.school}</p>
                 <p className="edu-degree">{edu.degree}</p>
-                <p style={{fontSize:'0.82rem', color:'var(--text-muted)', margin:'0.25rem 0 0.5rem'}}>{edu.desc}</p>
+                <p className="edu-desc">{edu.desc}</p>
                 <p className="edu-year">{edu.year}</p>
               </div>
             ))}
