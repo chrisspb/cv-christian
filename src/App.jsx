@@ -9,10 +9,17 @@ const EXPERIENCES = [
     tags: ["Vue 3", "JavaScript", "jQuery", "PHP", "Symfony", "MySQL", "SCSS", "GitLab", "Xcode"]
   },
   {
+    company: "Projet Freelance — Lean Management",
+    role: "AI-Powered Full Stack Developer",
+    period: "2024 → 2025",
+    desc: "Développement en 1 mois d'une solution de lean management complète, vibe-codée avec l'IA. Adoptée par une multinationale et déployée sur plusieurs sites dans le monde. Du concept au déploiement en totale autonomie grâce à une approche IA-first.",
+    tags: ["AI", "Vibe Coding", "Lean Management", "React", "Supabase", "Cursor", "TypeScript"]
+  },
+  {
     company: "Université de Nice Sophia-Antipolis",
     role: "Chargé de Cours",
-    period: "2019 → Present",
-    desc: "Enseignement en Master MIAGE et Licence Informatique. Modules : Conception orientée objet avancée, Programmation client web riche, Développement web, Développement mobile hybride.",
+    period: "2019 → 2021",
+    desc: "Enseigné pendant 2 ans en Master MIAGE et Licence Informatique. Modules : Conception orientée objet avancée, Programmation client web riche, Développement web, Développement mobile hybride.",
     tags: ["JavaScript", "Vue.js", "Node.js", "Sequelize", "HTML5", "CSS3", "Pédagogie"]
   },
   {
@@ -49,17 +56,17 @@ const SKILLS = [
     items: [
       { name: "Node.js", level: 75 },
       { name: "PHP / Symfony", level: 70 },
-      { name: "Supabase", level: 75 },
+      { name: "Supabase", level: 80 },
       { name: "MySQL", level: 70 },
       { name: "Firebase", level: 65 }
     ]
   },
   {
-    title: "Outils & DevOps",
-    icon: "🔧",
+    title: "IA & Outils",
+    icon: "🤖",
     items: [
+      { name: "Cursor / Vibe Coding", level: 90 },
       { name: "Git / GitLab", level: 90 },
-      { name: "Xcode (mobile)", level: 65 },
       { name: "Vite / Webpack", level: 80 },
       { name: "PHPStorm / VSCode", level: 90 },
       { name: "Agile / Scrum", level: 80 }
@@ -114,11 +121,11 @@ export default function App() {
             <p className="hero-subtitle">Lead Front-End Developer</p>
             <p className="hero-desc">
               10+ ans d'expérience en développement web et mobile hybride, spécialisé JavaScript.
-              Passionné par la modernisation d'architectures legacy, la qualité de code et la transmission du savoir.
+              Passionné par la modernisation d'architectures legacy, la qualité de code, et l'utilisation de l'IA pour créer des produits concrets à fort impact.
             </p>
             <div className="hero-meta">
               <span>📍 La Colle-sur-Loup, France</span>
-              <span>💼 PREVENTEO · Enseignant Univ. Nice</span>
+              <span>💼 PREVENTEO · Lead Developer</span>
             </div>
             <div className="hero-links">
               <a href="https://www.linkedin.com/in/christian-pagh-birk" target="_blank" rel="noreferrer" className="btn btn-primary">
@@ -145,8 +152,8 @@ export default function App() {
           <p className="about-text">
             Développeur front-end depuis plus de 10 ans, j'ai évolué d'intégrateur web à Lead Developer,
             pilotant des migrations techniques complexes et des choix d'architecture au sein d'équipes produit.
-            En parallèle, j'enseigne à l'Université de Nice les fondamentaux et concepts avancés du développement web,
-            ce qui renforce ma capacité à vulgariser et structurer des sujets techniques complexes.
+            Convaincu que l'IA redéfinit notre façon de créer, j'ai vibe-codé en 1 mois une solution de lean management
+            adoptée par une multinationale sur plusieurs sites dans le monde — une démonstration concrète de ce qu'un développeur peut accomplir avec les bons outils.
           </p>
           <div className="about-grid">
             <div className="about-card">
@@ -154,12 +161,12 @@ export default function App() {
               <p>Migration de systèmes legacy vers des architectures modernes Vue 3. Définition des standards de code, revues, et montée en compétence d'équipe.</p>
             </div>
             <div className="about-card">
-              <h3>📱 Développement Mobile Hybride</h3>
-              <p>Conception et développement d'apps mobiles hybrides de bout en bout — de l'idée au déploiement, en autonomie totale.</p>
+              <h3>🤖 IA & Vibe Coding</h3>
+              <p>Utilisation avancée de l'IA (Cursor, LLMs) pour concevoir et livrer des produits complets à vitesse inédite. Solution lean management mondiale développée en 1 mois.</p>
             </div>
             <div className="about-card">
-              <h3>🎓 Pédagogie & Transmission</h3>
-              <p>Chargé de cours en Master MIAGE depuis 2019. Création de contenus pédagogiques, projets encadrés, et suivi personnalisé des étudiants.</p>
+              <h3>📱 Développement Mobile Hybride</h3>
+              <p>Conception et développement d'apps mobiles hybrides de bout en bout — de l'idée au déploiement, en autonomie totale.</p>
             </div>
             <div className="about-card">
               <h3>⚡ Performance & Qualité</h3>
