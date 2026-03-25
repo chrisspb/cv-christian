@@ -9,10 +9,10 @@ const EXPERIENCES = [
     tags: ["Vue 3", "JavaScript", "jQuery", "PHP", "Symfony", "MySQL", "SCSS", "GitLab", "Xcode"]
   },
   {
-    company: "Projet Freelance — Lean Management",
-    role: "AI-Powered Full Stack Developer",
-    period: "2024 → 2025",
-    desc: "Développement en 1 mois d'une solution de lean management complète, vibe-codée avec l'IA. Adoptée par une multinationale et déployée sur plusieurs sites dans le monde. Du concept au déploiement en totale autonomie grâce à une approche IA-first.",
+    company: "PREVENTEO",
+    role: "Solution Lean Management — IA-First",
+    period: "2026",
+    desc: "Conception et développement en 1 mois d'une solution de lean management complète, vibe-codée avec l'IA au sein de PREVENTEO. Adoptée par une multinationale et déployée sur plusieurs sites dans le monde. Du concept à la mise en production grâce à une approche IA-first.",
     tags: ["AI", "Vibe Coding", "Lean Management", "React", "Supabase", "Cursor", "TypeScript"]
   },
   {
@@ -111,7 +111,6 @@ export default function App() {
       <main>
         <section className="hero" id="hero" style={{maxWidth:'100%'}}>
           <div className="hero-bg" />
-          <div className="hero-grid" />
           <div className="hero-content">
             <div className="hero-badge">
               <span />
@@ -257,7 +256,7 @@ export default function App() {
         <p>
           Conçu & développé par{' '}
           <a href="https://www.christianpaghbirk.com" target="_blank" rel="noreferrer">Christian Pagh-Birk</a>
-          {' '}· React · Vite · 2025
+          {' '}· React · Vite · 2026
         </p>
       </footer>
     </>
