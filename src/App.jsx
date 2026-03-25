@@ -23,7 +23,7 @@ const EXPERIENCES = [
     tags: ["JavaScript", "Vue.js", "HTML5", "CSS3", "Pédagogie"]
   },
   {
-    company: "Freelance — Projet Aperooo",
+    company: "Projet Personnel — Aperooo",
     role: "Full Stack Developer",
     period: "2018 → 2020",
     desc: "Conception et développement from scratch d'une application mobile hybride communautaire. Architecture, UX et développement full stack en totale autonomie.",
@@ -59,16 +59,16 @@ const SKILLS = [
 const EDUCATION = [
   {
     school: "Université Nice Sophia-Antipolis",
-    degree: "Master MIAGE",
+    degree: "Licence & Master MIAGE",
     desc: "Méthodes Informatiques Appliquées à la Gestion des Entreprises",
-    year: "2012 – 2014",
+    year: "2014 – 2018",
     honor: "🥇 Major de promotion"
   },
   {
     school: "IUT Nice",
-    degree: "DUT Informatique",
-    desc: "Option Génie Logiciel",
-    year: "2010 – 2012"
+    degree: "DUT Gestion des Entreprises et Administration",
+    desc: "Formation en gestion, administration et management des organisations",
+    year: "2011 – 2013"
   }
 ]
 
