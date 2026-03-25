@@ -23,16 +23,16 @@ const EXPERIENCES = [
     tags: ["JavaScript", "Vue.js", "HTML5", "CSS3", "Pédagogie"]
   },
   {
-    company: "Projet Personnel — Aperooo",
+    company: "Projet Personnel",
     role: "Full Stack Developer",
-    period: "2018 → 2020",
+    period: "2020",
     desc: "Conception et développement from scratch d'une application mobile hybride communautaire. Architecture, UX et développement full stack en totale autonomie.",
     tags: ["React", "Node.js", "Firebase", "Heroku", "SCSS", "Bitbucket"]
   },
   {
     company: "Sopra Steria · Orange",
     role: "Développeur Front-End",
-    period: "2017 → 2018",
+    period: "2017 → 2020",
     desc: "Développement de portails web pour Orange dans le cadre de projets stratégiques (MAGIC, STAR, SPAAD) : portail de gestion de recommandations et animation de TV office.",
     tags: ["JavaScript", "jQuery", "PHP", "Zend2", "MySQL", "HTML5", "CSS3"]
   }
