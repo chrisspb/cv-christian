@@ -27,19 +27,15 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
-      - name: Debug versions
+      - name: Debug
         run: |
           echo "Node: $(node -v)"
-          echo "npm: $(npm -v)"
-          ls node_modules/.bin/vite || echo 'vite binary not found'
+          ls node_modules/.bin/vite && echo 'vite ok' || echo 'vite missing'
 
       - name: Build
         run: npx vite build
-
-      - name: List dist
-        run: ls -la dist/ dist/assets/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
