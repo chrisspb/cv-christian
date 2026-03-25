@@ -5,7 +5,7 @@ const EXPERIENCES = [
     company: "PREVENTEO",
     role: "Lead Front-End Developer",
     period: "2020 → Present",
-    desc: "À l'initiative d'une architecture micro front-end pour distribuer des librairies et composants partagés dans plusieurs applicatifs. Pilotage de la modernisation d'une plateforme SaaS QHSE : migration jQuery legacy vers Vue 3 avec une architecture modulaire et maintenable. Référent technique front-end de l'équipe.",
+    desc: "À l'initiative d'une architecture micro front-end pour distribuer des librairies et composants partagés dans plusieurs applicatifs. Pilotage de la modernisation d'une plateforme SaaS QHSE : migration jQuery legacy vers Vue 3 avec une architecture modulaire et maintenable. Référent technique front-end de l'équipe.",
     tags: ["Vue 3", "Micro Frontend", "JavaScript", "jQuery", "PHP", "Symfony", "SCSS", "GitLab"]
   },
   {
@@ -19,7 +19,7 @@ const EXPERIENCES = [
     company: "Université de Nice Sophia-Antipolis",
     role: "Chargé de Cours",
     period: "2019 → 2021",
-    desc: "Enseigné pendant 2 ans en Master MIAGE et Licence Informatique. Modules : Conception orientée objet avancée, Programmation client web riche, Développement web, Développement mobile hybride.",
+    desc: "Enseigné pendant 2 ans en Master MIAGE et Licence Informatique. Modules : Conception orientée objet avancée, Programmation client web riche, Développement web, Développement mobile hybride.",
     tags: ["JavaScript", "Vue.js", "Node.js", "Sequelize", "HTML5", "CSS3", "Pédagogie"]
   },
   {
@@ -32,8 +32,8 @@ const EXPERIENCES = [
   {
     company: "Sopra Steria · Orange",
     role: "Développeur Front-End",
-    period: "2015 → 2018",
-    desc: "Développement de portails web pour Orange dans le cadre de projets stratégiques (MAGIC, STAR, SPAAD) : portail de gestion de recommandations et animation de TV office.",
+    period: "2017 → 2018",
+    desc: "Développement de portails web pour Orange dans le cadre de projets stratégiques (MAGIC, STAR, SPAAD) : portail de gestion de recommandations et animation de TV office.",
     tags: ["JavaScript", "jQuery", "PHP", "Zend2", "MySQL", "HTML5", "CSS3"]
   }
 ]
@@ -61,7 +61,8 @@ const EDUCATION = [
     school: "Université Nice Sophia-Antipolis",
     degree: "Master MIAGE",
     desc: "Méthodes Informatiques Appliquées à la Gestion des Entreprises",
-    year: "2012 – 2014"
+    year: "2012 – 2014",
+    honor: "🥇 Major de promotion"
   },
   {
     school: "IUT Nice",
@@ -78,7 +79,7 @@ const LANGUAGES = [
 ]
 
 const STATS = [
-  { num: "10+", label: "ans d'expérience" },
+  { num: "8+", label: "ans d'expérience" },
   { num: "5+", label: "projets en autonomie" },
   { num: "1", label: "multinationale convaincue" }
 ]
@@ -108,7 +109,7 @@ export default function App() {
             <h1>Christian<br /><span className="gradient-text">Pagh-Birk.</span></h1>
             <p className="hero-subtitle">Lead Front-End Developer</p>
             <p className="hero-desc">
-              10+ ans d'expérience en développement web et mobile hybride, spécialisé JavaScript.
+              8+ ans d'expérience en développement web et mobile hybride, spécialisé JavaScript.
               Passionné par la modernisation d'architectures, l'IA, et la création de produits à fort impact.
             </p>
             <div className="hero-stats">
@@ -144,9 +145,9 @@ export default function App() {
 
         <section id="about">
           <div className="section-label">À propos</div>
-          <h2 className="section-title">Qui suis-je ?</h2>
+          <h2 className="section-title">Qui suis-je ?</h2>
           <p className="about-text">
-            Développeur front-end depuis plus de 10 ans, j'ai évolué d'intégrateur web à Lead Developer,
+            Développeur front-end depuis plus de 8 ans, j'ai évolué d'intégrateur web à Lead Developer,
             pilotant des migrations techniques complexes et des choix d'architecture au sein d'équipes produit.
             Convaincu que l'IA redéfinit notre façon de créer, j'ai vibe-codé en 1 mois une solution de lean management
             adoptée par une multinationale — une démonstration concrète de ce qu'un développeur peut accomplir avec les bons outils.
@@ -155,7 +156,7 @@ export default function App() {
             <div className="about-card">
               <div className="about-card-icon">🏗</div>
               <h3>Architecture & Modernisation</h3>
-              <p>Micro front-end, migration de systèmes legacy vers Vue 3, définition des standards de code et montée en compétence d'équipe.</p>
+              <p>Micro front-end, migration de systèmes legacy vers Vue 3, définition des standards de code et montée en compétence d'équipe.</p>
             </div>
             <div className="about-card">
               <div className="about-card-icon">🤖</div>
@@ -170,7 +171,7 @@ export default function App() {
             <div className="about-card">
               <div className="about-card-icon">⚡</div>
               <h3>Performance & Qualité</h3>
-              <p>Sensible à l'expérience développeur et utilisateur : code lisible, maintenable, testé, et performant dès la conception.</p>
+              <p>Sensible à l'expérience développeur et utilisateur : code lisible, maintenable, testé, et performant dès la conception.</p>
             </div>
           </div>
         </section>
@@ -232,6 +233,7 @@ export default function App() {
                 <p className="edu-school">{edu.school}</p>
                 <p className="edu-degree">{edu.degree}</p>
                 <p className="edu-desc">{edu.desc}</p>
+                {edu.honor && <p className="edu-honor">{edu.honor}</p>}
                 <p className="edu-year">{edu.year}</p>
               </div>
             ))}
